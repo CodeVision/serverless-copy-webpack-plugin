@@ -1,0 +1,31 @@
+{
+  "name": "serverless-copy-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin to be used in combination with serverless webpack in order to copy resources to individual lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkb-brandstof/serverless-copy-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "serverless",
+    "copy"
+  ],
+  "author": "MKB Brandstof <devops@mkb-brandstof.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkb-brandstof/serverless-copy-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/mkb-brandstof/serverless-copy-webpack-plugin#readme",
+  "dependencies": {
+    "copy-webpack-plugin": "^6.2.1",
+    "webpack": "^5.3.2"
+  },
+  "devDependencies": {
+    "serverless-webpack": "^5.3.5"
+  }
+}
