@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkb-brandstof/serverless-copy-webpack-plugin.git"
+    "url": "git+https://github.com/CodeVision/serverless-copy-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
     "serverless",
     "copy"
   ],
-  "author": "MKB Brandstof <devops@mkb-brandstof.nl>",
+  "author": "CodeVision <codevision@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkb-brandstof/serverless-copy-webpack-plugin/issues"
+    "url": "https://github.com/CodeVision/serverless-copy-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/mkb-brandstof/serverless-copy-webpack-plugin#readme",
+  "homepage": "https://github.com/CodeVision/serverless-copy-webpack-plugin#readme",
   "dependencies": {
     "copy-webpack-plugin": "^6.2.1",
     "webpack": "^5.3.2"
