@@ -17,11 +17,13 @@ class ServerlessCopyWebpackPlugin {
 
   apply(compiler) {
     const functionName = compiler.options.output.path.substring(compiler.options.output.path.lastIndexOf('/') + 1)
-    const config = slsw.lib.serverless.service.functions[functionName]
-    let includePaths = config.package && config.package.include || [];
-    includePaths = includePaths.map(convertPattern);
-    if (includePaths.length) {
-      new CopyWebpackPlugin({ patterns: includePaths }).apply(compiler);
+    if (slsw.lib.service) {
+      const config = slsw.lib.serverless.service.functions[functionName]
+      let includePaths = config.package && config.package.include || [];
+      includePaths = includePaths.map(convertPattern);
+      if (includePaths.length) {
+        new CopyWebpackPlugin({ patterns: includePaths }).apply(compiler);
+      }
     }
   }
 }
