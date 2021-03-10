@@ -1,6 +1,6 @@
 {
   "name": "serverless-copy-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin to be used in combination with serverless webpack in order to copy resources to individual lambda functions",
   "main": "index.js",
   "scripts": {
