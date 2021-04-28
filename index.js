@@ -17,7 +17,7 @@ class ServerlessCopyWebpackPlugin {
 
   apply(compiler) {
     const functionName = compiler.options.output.path.substring(compiler.options.output.path.lastIndexOf('/') + 1)
-    if (slsw.lib.service) {
+    if (slsw.lib.serverless.service) {
       const config = slsw.lib.serverless.service.functions[functionName]
       let includePaths = config && config.package && config.package.include || [];
       includePaths = includePaths.map(convertPattern);
